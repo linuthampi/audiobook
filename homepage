@@ -1,0 +1,234 @@
+import math
+
+import os
+from Tkinter import *
+
+import tkMessageBox
+from PIL import ImageTk, Image
+import warnings
+warnings.filterwarnings("ignore")
+
+from tt import *
+
+
+import time
+import shutil
+
+global path
+# ----------------------------------------
+def voice():
+    pass
+def demo():
+    global path
+    path = askopenfilename()
+    print path
+    f=open(path,'rb')
+    data=f.read()
+    showdata=testit(data)
+def display():
+     # e1.delete(st,END)
+##     global path
+     f = open("data.txt", 'rb')
+     data = f.read()
+     e1.insert(END, data)
+
+from PIL import ImageTk, Image
+wndw = Tk()
+w = 760;
+h = 700
+x = (wndw.winfo_screenwidth() - w) / 2
+y = (wndw.winfo_screenheight() - h) / 2
+wndw.geometry("%dx%d+%d+%d" % (w, h, x, y))
+wndw.configure(bg="AliceBlue")
+wndw.title("Testing")
+l1 = Label(wndw, text="Emotion Detection System")
+l1.config(font=("Times New Roman", 25))
+l1.grid(row=1, column=1)
+# img_ar = Image.open("student.jpg")
+# ph_ar = ImageTk.PhotoImage(img_ar)
+lbl_ar = Label(wndw)
+# lbl_ar.image = ph_ar
+lbl_ar.grid(row=2, columnspan=3)
+btn_test = Button(wndw, text="Train the System", command=lambda: mainn())
+btn_test.grid(row=4, column=1)
+l3 = Label(wndw, text="                              ")
+l3.grid(row=5, column=1)
+
+l2 = Label(wndw, text="Upload Text file :")
+l2.config(font=("Normal", 15))
+l2.grid(row=6, column=1)
+
+entry_box = Entry(wndw)
+entry_box.config(width=50)
+entry_box.grid(row=7, column=1)
+
+btn_test = Button(wndw, text="Upload File")
+btn_test.grid(row=8, column=1)
+
+butdis=Button(wndw,text="Display data",command=display)
+butdis.grid(row=8,column=2)
+
+btn_test2 = Button(wndw, text="Start Emotional speaking", command=lambda: voice())
+btn_test2.grid(row=11, column=1)
+e1=Text(wndw,height=25,width=80)
+e1.place(x=50,y=250)
+wndw.resizable(2, 2)
+wndw.mainloop()
+
+
+import math
+
+import os
+from Tkinter import *
+
+import tkMessageBox
+from PIL import ImageTk, Image
+import warnings
+warnings.filterwarnings("ignore")
+
+from tt import *
+
+
+import time
+import shutil
+
+global path
+# ----------------------------------------
+def voice():
+    pass
+def demo():
+    global path
+    path = askopenfilename()
+    print path
+    f=open(path,'rb')
+    data=f.read()
+    showdata=testit(data)
+def display():
+     # e1.delete(st,END)
+##     global path
+     f = open("data.txt", 'rb')
+     data = f.read()
+     e1.insert(END, data)
+
+from PIL import ImageTk, Image
+wndw = Tk()
+w = 760;
+h = 700
+x = (wndw.winfo_screenwidth() - w) / 2
+y = (wndw.winfo_screenheight() - h) / 2
+wndw.geometry("%dx%d+%d+%d" % (w, h, x, y))
+wndw.configure(bg="AliceBlue")
+wndw.title("Testing")
+l1 = Label(wndw, text="Emotion Detection System")
+l1.config(font=("Times New Roman", 25))
+l1.grid(row=1, column=1)
+# img_ar = Image.open("student.jpg")
+# ph_ar = ImageTk.PhotoImage(img_ar)
+lbl_ar = Label(wndw)
+# lbl_ar.image = ph_ar
+lbl_ar.grid(row=2, columnspan=3)
+btn_test = Button(wndw, text="Train the System", command=lambda: mainn())
+btn_test.grid(row=4, column=1)
+l3 = Label(wndw, text="                              ")
+l3.grid(row=5, column=1)
+
+l2 = Label(wndw, text="Upload Text file :")
+l2.config(font=("Normal", 15))
+l2.grid(row=6, column=1)
+
+entry_box = Entry(wndw)
+entry_box.config(width=50)
+entry_box.grid(row=7, column=1)
+
+btn_test = Button(wndw, text="Upload File")
+btn_test.grid(row=8, column=1)
+
+butdis=Button(wndw,text="Display data",command=display)
+butdis.grid(row=8,column=2)
+
+btn_test2 = Button(wndw, text="Start Emotional speaking", command=lambda: voice())
+btn_test2.grid(row=11, column=1)
+e1=Text(wndw,height=25,width=80)
+e1.place(x=50,y=250)
+wndw.resizable(2, 2)
+wndw.mainloop()
+
+
+import math
+
+import os
+from Tkinter import *
+
+import tkMessageBox
+from PIL import ImageTk, Image
+import warnings
+warnings.filterwarnings("ignore")
+
+from tt import *
+
+
+import time
+import shutil
+
+global path
+# ----------------------------------------
+def voice():
+    pass
+def demo():
+    global path
+    path = askopenfilename()
+    print path
+    f=open(path,'rb')
+    data=f.read()
+    showdata=testit(data)
+def display():
+     # e1.delete(st,END)
+##     global path
+     f = open("data.txt", 'rb')
+     data = f.read()
+     e1.insert(END, data)
+
+from PIL import ImageTk, Image
+wndw = Tk()
+w = 760;
+h = 700
+x = (wndw.winfo_screenwidth() - w) / 2
+y = (wndw.winfo_screenheight() - h) / 2
+wndw.geometry("%dx%d+%d+%d" % (w, h, x, y))
+wndw.configure(bg="AliceBlue")
+wndw.title("Testing")
+l1 = Label(wndw, text="Emotion Detection System")
+l1.config(font=("Times New Roman", 25))
+l1.grid(row=1, column=1)
+# img_ar = Image.open("student.jpg")
+# ph_ar = ImageTk.PhotoImage(img_ar)
+lbl_ar = Label(wndw)
+# lbl_ar.image = ph_ar
+lbl_ar.grid(row=2, columnspan=3)
+btn_test = Button(wndw, text="Train the System", command=lambda: mainn())
+btn_test.grid(row=4, column=1)
+l3 = Label(wndw, text="                              ")
+l3.grid(row=5, column=1)
+
+l2 = Label(wndw, text="Upload Text file :")
+l2.config(font=("Normal", 15))
+l2.grid(row=6, column=1)
+
+entry_box = Entry(wndw)
+entry_box.config(width=50)
+entry_box.grid(row=7, column=1)
+
+btn_test = Button(wndw, text="Upload File")
+btn_test.grid(row=8, column=1)
+
+butdis=Button(wndw,text="Display data",command=display)
+butdis.grid(row=8,column=2)
+
+btn_test2 = Button(wndw, text="Start Emotional speaking", command=lambda: voice())
+btn_test2.grid(row=11, column=1)
+e1=Text(wndw,height=25,width=80)
+e1.place(x=50,y=250)
+wndw.resizable(2, 2)
+wndw.mainloop()
+
+
